@@ -24,7 +24,6 @@ const routes = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
-        loader: () => fetch("https://server-sr-brand-shop.vercel.app/products"),
       },
       {
         path: "/signup",
@@ -45,7 +44,6 @@ const routes = createBrowserRouter([
       {
         path: "/product",
         element: <Product />,
-        loader: () => fetch("https://server-sr-brand-shop.vercel.app/products"),
       },
       {
         path: "/product/:id",
@@ -70,10 +68,6 @@ const routes = createBrowserRouter([
       {
         path: "/brand/:name",
         element: <BrandProducts />,
-        loader: ({ params }) =>
-          fetch(
-            `https://server-sr-brand-shop.vercel.app/brands/${params.name}`
-          ),
       },
       {
         path: "/profile",
