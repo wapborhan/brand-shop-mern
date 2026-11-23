@@ -1,62 +1,60 @@
-<h3 align="center">SR Brand Shop</h3>
+# 🛍️ SR Brand Shop - Frontend Client
 
-### Live Link
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=firebase)](https://sr-brand-shop.web.app/)
 
-[https://sr-brand-shop.web.app/](https://sr-brand-shop.web.app/)
+The client-side single-page application for **SR Brand Shop**, built with React, Vite, Tailwind CSS, and Firebase Authentication.
 
-### Description
+---
 
-SR Brand Shop is a web application that allows users to browse and purchase Technology items online. It is designed to provide a user-friendly interface that is easy to navigate and provides an intuitive shopping experience. The app is fully responsive and optimized for different screen sizes.
+## 🌐 Live Website
 
-### Built with
+- **Live URL**: [https://sr-brand-shop.web.app/](https://sr-brand-shop.web.app/)
+- **Backend API**: [https://server-sr-brand-shop.vercel.app/](https://server-sr-brand-shop.vercel.app/)
 
-- MongoDB
-- ExpressJS
-- ReactJS
-- NodeJS
-- Tailwind
+---
 
-### Installing
+## 📸 Preview
 
-To run the Brand Shop project on your local machine, you need to have the following software installed:
+![SR Brand Shop Screenshot](public/screenshot.jpg)
 
-- Nodejs
-- Code Editor any (VS code recommended)
+---
 
-#### Steps
+## 🌟 Features
 
-1. Clone the repository to your local machine:
+- **User Authentication**: Secure email/password login and registration with validation, plus Google one-click sign-in.
+- **Brand Showcase & Filtering**: Browse by renowned tech brands with dynamic brand sliders and product listings.
+- **Graceful Empty State Handling**: Displays "No product found" when brand products are empty or unavailable.
+- **Product Management**: Authenticated users can add new products and edit existing ones.
+- **Product Details & Cart**: Detailed product view with rating, specifications, and cart management (add, view, remove).
+- **Theme Switcher**: Instant toggle between Dark and Light display modes.
+- **Protected Routes**: Sensitive pages (`/cart`, `/add-product`, `/update-product/:id`, `/product/:id`) require authentication.
 
-```bash
-  git clone https://github.com/programming-hero-web-course-4/b8a10-brandshop-client-side-wapborhan.git
-```
+---
 
-You can do this by running the following command from the project directory:
+## 💻 Tech Stack
 
-```bash
+- **React 18** & **Vite**
+- **React Router DOM 6**
+- **Tailwind CSS** & **DaisyUI**
+- **Firebase Authentication**
+- **React Slick** & **Slick Carousel**
+- **React Toastify** & **React Icons**
+
+---
+
+## 🚀 Local Development
+
+1. Install dependencies:
+   ```bash
    npm install
-```
+   ```
 
-```bash
+2. Start development server:
+   ```bash
    npm run dev
-```
+   ```
 
-Note: Need server site for run proper
-
-### Features
-
-- **User authentication**: users can sign up, log in, and log out of the platform.
-- **Product ADD**: users can add products, view product details, and add items to their cart.
-- **Shopping cart**: users can view their cart, and remove items from the cart.
-- **Brand Filter**: users can view brand wise product and view product details also add their cart.
-- **User Profile**: users can view his/her profile and view information.
-- **Update Profile**: users can Update his/her profile and view information.
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. Build for production:
+   ```bash
+   npm run build
+   ```
